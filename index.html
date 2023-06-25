@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel = "stylesheet" type = "text/css" href="currency.css">
+	<script src="currency.js"></script>
+	<title>Currency Converter</title>
+</head>
+<body>
+
+<div>
+
+	<h1>Currency Converter</h1>
+	<h2>You will get the best rates here...</h2><br>
+
+	<label>Choose a currency</label>
+	<label>Amount on hand</label><br>
+	<select id="onhand" onchange="setAmount(); return false;">
+		<option disabled selected>Currency on hand</option>
+		<option value="EUR">EURO</option>
+		<option value="USD">US Dollar</option>
+		<option value="CAD">Canadian Dollar</option>
+		<option value="BTC">Bitcoin Digital Currency</option>
+		<option value="ETH">Ethereum Digital Currency</option>
+	</select>
+
+	
+	<input id="amount" type="Number" placeholder="Enter the Amount" min="0" disabled><br><br>
+
+
+	<label>Choose a currency</label>
+	<label>Converted Amount</label><br>
+	<select disabled id="convertTo" onchange="currencyConverter(); return false;">
+		<option disabled selected>Covert to</option>
+		<option id="EURO" value="EUR1">EURO</option>
+		<option id="USD" value="USD1">US Dollar</option>
+		<option id="CAD" value="CAD1">Canadian Dollar</option>
+		<option id="BTC" value="BTC1">Bitcoin Digital Currency</option>
+		<option id="ETH" value="ETH1">Ethereum Digital Currency</option>
+	</select>
+
+	<input id="convertedamount" type="text" disabled><br>
+
+</div>
+
+
+
+
+
+</body>
+</html>
